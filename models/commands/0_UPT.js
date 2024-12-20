@@ -13,10 +13,10 @@ module.exports.config = {
   name: "upt",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "SHAAN KHAN",
-  description: "Koii Prefix nhi",
-  commandCategory: "Hukum Ke Bagher",
-  usages: "Online Time Timing Dekhye",
+  credits: "ARIF BABU",
+  description: "no prefix",
+  commandCategory: "no prefix",
+  usages: "check bot uptime",
   cooldowns: 5
 };
 
@@ -29,7 +29,7 @@ function byte2mb(bytes) {
 
 module.exports.handleEvent = async ({ api, event, Threads }) => {
   const xuly = Math.floor((Date.now() - global.client.timeStart) / 4444);
-  const trinhtrang = xuly < 10 ? "  Acha ✔️" : xuly > 10 && xuly < 100 ? "Thir" : "Ammi";
+  const trinhtrang = xuly < 10 ? " Acha ✔️" : xuly > 10 && xuly < 100 ? "Sthir" : "Dheema";
 
   if (!event.body) return;
 
